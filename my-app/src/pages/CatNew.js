@@ -1,27 +1,23 @@
-import React, { useState } from "react";
-import { Form, FormGroup, Label, Input, Button } from "reactstrap";
-import { useNavigate } from "react-router-dom";
-import "../styles/CatNew.css";
+import React, { useState } from "react"
+import { Form, FormGroup, Label, Input, Button } from "reactstrap"
+import { useNavigate } from "react-router-dom"
+import '../styles/CatNew.css'
 
 const CatNew = ({ createCat }) => {
+  const navigate = useNavigate()
   const [newCat, setNewCat] = useState({
     name: "",
     age: "",
-    hobbies: "",
+    enjoys: "",
     image: ""
-  });
-
-  const navigate = useNavigate();
-
+  })
   const handleChange = (e) => {
-    setNewCat({ ...newCat, [e.target.name]: e.target.value });
-  };
-
+    setNewCat({ ...newCat, [e.target.name]: e.target.value })
+  }
   const handleSubmit = () => {
-    createCat(newCat);
-    navigate("/catindex");
-  };
-
+    createCat(newCat)
+    navigate("/catindex")
+  }
   return (
     <>
       <Form>

@@ -15,23 +15,19 @@ const url = "https://cat-tinder-back.onrender.com"
 
 const App = () => {
   const [cats, setCats] = useState([])
-  const createCat = (cat) => {
-    console.log(cat)
-  }
+  useEffect(() => {
+    catShow()
+  }, [])
 
   const catShow = () => {
-    fetch(`${url}/catshow`)
+    fetch(`${url}/catindex`)
       .then((response) => response.json())
       .then((payload) => {
         setCats(payload)
       })
       .catch((error) => console.log(error))
   }
-  
-  useEffect(() => {
-    catShow()
-  }, [])
-  
+
   const catNew = (createCat) => {
     fetch(`${url}/catnew`, {
       body: JSON.stringify(createCat),
@@ -44,6 +40,7 @@ const App = () => {
       .then((payload) => catShow())
       .catch((errors) => console.log("Cat create errors:", errors))
   }
+
   const updateCat = (cat, id) => {
     fetch(`${url}/catedit/cats/${id}`, {
       body: JSON.stringify(cat),
@@ -56,20 +53,19 @@ const App = () => {
       .then((payload) => catShow())
       .catch((errors) => console.log("Cat update errors:", errors))
   }
+
   return (
     <>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/catindex" element={<CatIndex cats={cats} />} />
-      <Route path="/catshow/:id" element={<CatShow cats={cats} />} />
-      <Route path="/catnew" element={<CatNew createCat={createCat} />} />
-      <Route path="/catedit/:id"element={<CatEdit cats={cats} updateCat={updateCat} />}/>
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-    <Footer />
-    
-      
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/catindex" element={<CatIndex cats={cats} />} />
+        <Route path="/catshow/:id" element={<CatShow cats={cats} />} />
+        <Route path="/catnew" element={<CatNew createCat={catNew} />} />
+        <Route path="/catedit/:id" element={<CatEdit cats={cats} updateCat={updateCat} />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
     </>
   )
 }

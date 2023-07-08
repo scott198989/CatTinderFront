@@ -3,7 +3,10 @@ import { NavLink } from "react-router-dom";
 import { Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import '../styles/CatIndex.css';
 
+
 const CatIndex = ({ cats }) => {
+  // const { id } = useParams()
+  // console.log(id)
   return (
     <div className="cat-index-container">
       {cats?.map((cat, index) => (
