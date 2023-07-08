@@ -1,7 +1,7 @@
 import cat1 from './assets/cat1.jpg'
 import cat2 from './assets/cat2.avif'
 import cat3 from './assets/cat3.avif'
-
+  
 const cats = [
     {
       id: 1,
