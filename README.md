@@ -6,13 +6,11 @@
 The front end version of the Cat Tinder project.  Using React.js, used state to update and or create instances of a cat.  Once the user creates a instance of a cat, or updates, the informtion is stored in a PostgreSQL databse.  To get that information upon request, use fetch commands.  
 
 ## Dependancies
+If using homebrew:
 
-Yarn
+brew update
 
-yarn 
-
-yarn install
-
+brew install yarn 
 
 React Testing Library
 
@@ -36,3 +34,10 @@ Scott Tuschl
 Aubrey Diehl
 
 Tucker Macklntyre
+
+
+## Contact
+
+Thank you for checking out my first major class project!  If you would like to connect on linkedin you can do so at https://www.linkedin/in/scott-tuschl or if you would like to drop me a line, or check out some of the other projects I have done, you can do so by visiting my portfolio site at https://www.scott-tuschl.com
+
+Thank you!
