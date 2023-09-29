@@ -49,6 +49,11 @@ Welcome to the front-end portion of Cat Tinder! Built with React.js, this projec
     ```bash
     yarn add react-testing-library react-router react-strap
     ```
+4. To Run Locally
+   ```bash
+   yarn
+   yarn start
+   ```
 
 ## Team
 
