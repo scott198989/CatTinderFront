@@ -1,43 +1,61 @@
-# CatTinderFront
-                        Cat Tinder Frontend
+![Cat Tinder Screenshot](https://github.com/scott198989/CatTinderFront/blob/main/Cat-Tinder-Screenshot.png)
 
-## Content 
+# Cat Tinder Front-end
 
-The front end version of the Cat Tinder project.  Using React.js, used state to update and or create instances of a cat.  Once the user creates a instance of a cat, or updates, the informtion is stored in a PostgreSQL databse.  To get that information upon request, use fetch commands.  
+## Table of Contents
 
-## Dependancies
-If using homebrew:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Team](#team)
+- [Contact](#contact)
 
-brew update
+## Introduction
 
-brew install yarn 
+Welcome to the front-end portion of Cat Tinder! Built with React.js, this project is all about creating and managing your favorite feline friends. The data is stored in a PostgreSQL database, and we've incorporated fetch API calls to retrieve or update information.
 
-React Testing Library
+## Features
 
-yarn add react-testing-library
+- Create a new cat profile
+- Update existing cat profiles
+- Integration with PostgreSQL for data storage
+- User-friendly interface thanks to React.js
 
+## Dependencies
 
-React Router
+**Software Needed**
 
-yarn add react-router
+- [Homebrew](https://brew.sh/)
+- [Yarn](https://yarnpkg.com/)
 
+**Libraries**
 
-React Strap
+- React Testing Library
+- React Router
+- React Strap
 
-yarn add react-strap
+## Installation
 
+1. Update Homebrew:
+    ```bash
+    brew update
+    ```
+2. Install Yarn:
+    ```bash
+    brew install yarn
+    ```
+3. Install Dependencies:
+    ```bash
+    yarn add react-testing-library react-router react-strap
+    ```
 
-Team:
+## Team
 
-Scott Tuschl 
-
-Aubrey Diehl
-
-Tucker Macklntyre
-
+- Scott Tuschl
+- Aubrey Diehl
+- Tucker Macklntyre
 
 ## Contact
 
-Thank you for checking out my first major class project!  If you would like to connect on linkedin you can do so by clicking my linkedin on my GitHub profile page, or if you would like to drop me a line, or check out some of the other projects I have done, you can do so by visiting my portfolio site at https://www.scott-tuschl.com
-
-Thank you!
+I'd love to hear your thoughts on this project! Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/scott-tuschl) or check out my [portfolio](https://www.scott-tuschl.com).
